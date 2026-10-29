@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Receipt Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+    <h2>Rent Receipt Register</h2>
+    <form action="result.jsp" method="post">
+        <label>Tenant</label><input name="tenant" maxlength="40" required>
+        <label>Month</label>
+        <select name="rent_month" required>
+            <option>Jan</option><option>Feb</option><option>Mar</option>
+            <option>Apr</option><option>May</option><option>Jun</option>
+            <option>Jul</option><option>Aug</option><option>Sep</option>
+            <option>Oct</option><option>Nov</option><option>Dec</option>
+        </select>
+        <label>Rent (Rs.)</label><input type="number" name="rent" min="1" required>
+        <label>Paid On</label><input type="date" name="paid_on" required>
+        <button type="submit">Save</button>
+    </form>
+    <p><a href="rent">View All Receipts</a></p>
+</main>
+</body>
+</html>
